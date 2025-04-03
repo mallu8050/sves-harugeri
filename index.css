@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: "Nunito Sans", serif;
+    background-color: rgb(243, 240, 236);
+}
+
+.icon {
+    box-shadow: 2px 2px 2px #1f1c1c;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-title {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #fd0000, rgb(255, 0, 255), aqua);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(236, 243, 243);
+    flex-wrap: wrap;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    color: inherit;
+    gap: 30px;
+}
+nav ul li:not(.active):hover button{
+    text-shadow: 0 0 10px #ff151580, 0 0 20px rgba(255, 17, 17, 0.5);
+}
+
+.hero {
+    height: 450px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./photes/collage\ ground.png');
+
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.hero-title {
+    font-size: 100px;
+    background: linear-gradient(45deg, #fd0000, rgb(255, 0, 255), aqua);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 5px 2px rgba(0, 0, 0, 0.8);
+}
+
+.hero-lead {
+    font-size: 40px;
+    background: linear-gradient(45deg, #67d74e, rgb(231, 129, 20), aqua);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-btn {
+    margin-top: 20px;
+    padding: 20px;
+    background: #5fd883;
+    color: #1f1c1c;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.about {
+    padding: 20px 20px;
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 80px;
+    border: 2px solid #b07d7d;
+    background-color: #fbf5f5;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.8);
+
+}
+
+.about-video {
+    padding-top: 10px;
+    align-items: center;
+}
+
+.about-text {
+    line-height: 1.5;
+    margin-top: 14px;
+    font-size: 25px;
+    padding-left: 14px;
+    background: linear-gradient(45deg, #da6363, rgb(146, 131, 62), rgb(191, 131, 19));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.department {
+    background-color: #dcffa0;
+    padding: 25px;
+    padding-top: 20px;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.8);
+}
+
+.section-lead {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.department-flex {
+    display: flex;
+    text-align: center;
+    gap: 50px;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.department-img {
+    border-radius: 1000px;
+    width: 190px;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.8);
+}
+
+.lectures-title {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-style: bold;
+    background: linear-gradient(45deg, #fd0000, rgb(255, 0, 255), aqua);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+.lectures {
+    padding: 20px;
+}
+
+.lectures-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 1px, 2px, 50px black;
+}
+
+.grid-item img {
+
+    font-size: 20px;
+    width: 100%;
+    aspect-ratio: 5/5;
+    object-fit: contain;
+    border: 2px solid rgb(130, 152, 248);
+    box-shadow: 0, 0, 5px rgb(106, 103, 103);
+    filter: saturate(100px);
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.8);
+}
+
+.grid-item {
+    text-align: center;
+    margin: 30px 10px;
+}
+
+
+
+.contect {
+    margin-top: 20px;
+    background-color: #dcffa0;
+    padding: 35px;
+
+
+}
+
+
+.contect-card {
+
+    box-shadow: 20px 20px 20px #1f1c1c;
+    border-radius: 20px;
+    background: #ffffff;
+
+    width: 650px;
+    margin: auto;
+
+
+}
+
+label {
+    display: block;
+}
+
+input,
+textarea {
+    width:600px;
+    font-size: 10px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    outline: none;
+    
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    color: #ffff;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 15px;
+    background: #2a74ff;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px #1f1c1c;
+    text-shadow: 0px 5px 2px rgba(0, 0, 0, 0.8);
+
+}
+
+.form-item {
+    padding: 20px;
+}
+
+
+
+
+
+@media screen and (max-width:760px) {
+
+    .about-layout,
+    .about-video {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-title,
+    .hero-lead {
+        margin-top: 0;
+        color: white;
+        font-size: 40px;
+
+    }
+
+    .contect-card {
+        width: 100%;
+    }
+
+    .lectures-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-layout {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:413px) {
+ .about-layout{
+    padding: 10px;
+
+ }
+
+ video{
+    width: 350px;
+ }
+ .navbar-list{
+    margin-top: 10px;
+    margin-bottom: 15px;
+ }
+    
+}
+

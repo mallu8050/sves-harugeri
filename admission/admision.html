@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Page</title>
+    <link rel="stylesheet" href="./admission.css">
+</head>
+
+<body>
+    <h2>Admission Page</h2>
+    <form action="conect.php" method="post">
+        <div class="Admission-container">
+            <div class="card">
+
+                <div class="card-total">
+                    <div class="name">
+                        <input type="text" class="name" placeholder="Full Name" name="fullname" required><br>
+                        <input type="text" class="name" placeholder="Father Name"  name="fathername"  required>
+                    </div>
+                </div>
+
+                <div class="card-total">
+                    <div class="gender">
+                        <label for="gender">Gender</label><br>
+                        <input type="radio" name="gender" value="m" required>Male
+                        <input type="radio" name="gender" value="f">Female
+                    </div>
+                </div>
+
+                <div class="card-total">
+
+                    <div class="cast">
+                        <label for="cast">Cast</label><br>
+                        <input type="radio" id="obc" value="obc" name="cast" required>OBC
+                        <input type="radio" id="sc" value="sc" name="cast" required>SC
+                        <input type="radio" id="st" value="st" name="cast" required>ST
+                    </div>
+
+                </div>
+
+
+                <div class="card-total">
+                    <div class="name">
+                        <input type="number" class="name" placeholder="Enter your mobile number"  name="mobile" required> <br>
+                        <input type="email" class="name" placeholder="Enter your E-mail"  name="email" required>
+                    </div>
+
+                </div>
+
+                <div class="card-total">
+                    <div class="date">
+                        <label for="date of birth">Date of Birth</label><br>
+                        <input type="date"  name="date">
+                    </div>
+                </div>
+
+                <div class="card-total">
+                    <div class="cource">
+                        <label for="cource">Your privius Cource</label><br>
+                        <input type="radio" name="cource" value="puc">PUC
+                        <input type="radio" name="cource" value="diploma">Diploma
+                    </div>
+                </div>
+                <input type="submit" >
+
+
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
